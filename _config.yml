@@ -23,8 +23,8 @@ author_image: "/assets/images/author.jpg"
 
 paginate:	10
 
-url: "http://blog.vivekkaushik.com" # the base hostname & protocol for your site
-baseurl: ""
+url: "https://blog.vivekkaushik.com" # the base hostname & protocol for your site
+baseurl: "https://blog.vivekkaushik.com"
 #used to display twitter cards
 twitter_handle: '@iamvivekkaushik'
 

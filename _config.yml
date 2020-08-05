@@ -1,0 +1,65 @@
+# Build settings
+gems:
+  - jemoji
+  - jekyll-paginate
+
+# Site settings
+title: "Vivek's Blog"
+description: > # this means to ignore newlines until "email:"
+   A 22 years old developer from India 🇮🇳
+
+email: me@vivekkaushik.com
+#blog logo
+logo: "/assets/images/logo.png"
+float_logo: true # true, false (default)
+
+# blog cover
+cover: "/assets/images/main_background.jpg"
+main_background: "/assets/images/main_background.jpg"
+
+name: 'Vivek Kaushik'
+author: 'Vivek Kaushik'
+author_image: "/assets/images/author.jpg"
+
+paginate:	10
+
+url: "http://blog.vivekkaushik.com" # the base hostname & protocol for your site
+baseurl: ""
+#used to display twitter cards
+twitter_handle: '@iamvivekkaushik'
+
+#fill in disqus shortname to use disqus
+# comments: true
+disqus: "viveks-blog-1"
+
+google_analytics: UA-96362742-5
+
+# social icons and sharing options
+social:
+  - icon:	twitter
+    url:	https://twitter.com/iamvivekkaushik
+    desc: Follow me on twitter
+    share_url: http://twitter.com/share
+    share_title: ?text=
+    share_link: "&amp;url="
+
+  - icon:	instagram
+    url:	https://www.instagram.com/iamvivekkaushik/
+    desc: Connect with me Instagram
+    share_url:
+    share_title:
+    share_link:
+
+  - icon:	github
+    url:	https://github.com/iamvivekkaushik
+    desc:	Fork me on github
+    share_url:
+    share_title:
+    share_link:
+
+#  - icon:	google-plus
+#    url:	https://google.com/???
+#    desc:	Add me on google+
+#    share_url:
+#    share_title:
+#    share_link:

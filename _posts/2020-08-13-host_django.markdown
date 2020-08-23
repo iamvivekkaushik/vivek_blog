@@ -3,7 +3,6 @@ layout: post
 title:  "How to host Django App with Apache2 on Ubuntu 18.04"
 date:   2020-08-13 15:32:50
 categories: ubuntu django apache
-# tags: featured
 # image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.JPG
 ---
 Django is a Python-based web framework. Django is great for building super fast and clean web applications. In this blog, I'll be walking you through how you can host a Django app on a Ubuntu Server.
@@ -88,38 +87,5 @@ Now open this file to edit. You can use any text editor for this, I'll be using 
 {% endhighlight %}
 
 Copy and paste the configurations below into the file
-
-{% highlight %}
-<VirtualHost *:80>
-        DEFINE BASE /home/ubuntu/Django-Project
-        DEFINE STATIC /home/ubuntu/Django-Project/static
-        DEFINE MEDIA /home/ubuntu/Django-Project/media
-        DEFINE INTERNAL Django_Project
-
-#        ServerName admin.example.com
-
-        Alias /static ${STATIC}
-        Alias /media ${MEDIA}
-
-        <Directory ${STATIC}>
-                Require all granted
-        </Directory>
-
-        <Directory ${MEDIA}>
-                Require all granted
-        </Directory>
-
-        <Directory ${BASE}/${INTERNAL}>
-                <Files wsgi.py>
-                        Require all granted
-                </Files>
-        </Directory>
-
-        WSGIDaemonProcess django-project python-home=${BASE}/.venv python-path=${BASE}
-        WSGIProcessGroup django-project
-        WSGIScriptAlias / ${BASE}/${INTERNAL}/wsgi.py
-        WSGIPassAuthorization On
-</VirtualHost>
-{% endhighlight %}
 
 ###### Change the path in the first 4 lines with your own project path.

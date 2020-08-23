@@ -3,7 +3,6 @@ layout: post
 title:  "How to Setup MySql on Ubuntu 18.04"
 date:   2020-08-04 14:34:25
 categories: ubuntu mysql
-tags: featured
 # image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.JPG
 ---
 MySql is an open-source database system available for linux to use for free. It's a relational database that uses SQL queries to manage its data.
